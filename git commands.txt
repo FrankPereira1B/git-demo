@@ -1,0 +1,37 @@
+Git hub commands
+
+$ cd git-demo
+
+$ git init
+
+$ git status
+
+$ git add .
+
+$ git commit -m "initial commit"
+
+$ git status
+
+$ git add .
+
+$ git status
+
+$ git commit -m "second commit"
+
+$ git config --global user.name = "FrankPereira1B"
+
+$ git config --global user.email = "frank.rithesh.pereira@gmail.com"
+
+$ git log
+
+$ git remote add origin git@github.com:FrankPereira1B/git-demo.git
+
+$ git remote -v
+
+$ git push origin master
+
+$ git push origin master
+
+$ git pull --rebase origin master
+
+$ git push origin master

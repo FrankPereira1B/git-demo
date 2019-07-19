@@ -1,0 +1,208 @@
+Notes :
+Making line chart dynamic
+Not found in Line Chart:
+
+dataset.forEach(function(item) {
+item.enabled = true;
+})
+
+var colorScheme = ["#ff0000", "#008000", "#ffff00", "#000000", "#003f5c", "#ffff00"]
+
+var color = d3.scaleOrdinal()
+    .range(colorScheme);
+-----------------------------------
+var arc = d3.arc()
+	.outerRadius(radius - 10)
+	.innerRadius(radius - 40)
+
+var labelArc = d3.arc()
+	.outerRadius(radius - 40)
+	.innerRadius(radius - 40);
+
+var pie = d3.pie()
+    .sort(null)
+    .value(function (d) {return d.value ; });
+---------------------------------------------
+var g = svg.selectall(".arc")
+    .data(pie(dataset))
+    .enter()
+    .append("g")
+    .attr("class", "arc");
+
+
+var path
+g.append("path")
+	.attr("d", arc)
+	.style("fill", function (d) { return color (d.data.value); });
+
+In Line chart all svg.append, svg.append(g) is found
+
+var
+
+Findings:
+
+Why do you have n=4 - take it off
+ xScale should be 
+var xScale = d3.scale.linear()
+.range([0, width]);
+
+
+
+----------------------------------
+function renderLineChart(dataset, dom_element_to_append_to) {
+var totalWidth = 0.22 *d3.select("body").node().getBoundingClinetRect;().width
+
+
+var line =d3.line()
+    .x(function (d) {return xScale(d.label); })
+    .y(function (d) {return yScale(d.value); })
+
+
+
+---------------------------------------------------------------
+
+Why var countCurrentWeekHours = 80;
+var countPastWeekHours = 60.5
+
+What is paginator?
+
+trend - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC0b/Az6ziSTmavncBRj11bew1F7GT7Ay5+RL3cvVncu29EP40WvWo6c91Ije6OX0EYhRbScwKgKaEYNMccIvH0G9xmzS4EWxMrzjoiDcYiZ0KXr0hyLsYZanCyIhbgsvRLKBxY7n9cXNSkw5L7TKkmS/3ABwPhggpluJdvaR5cyJiPohGNYsJd5b4FUTl90S/fBREUgrRMMBYK+jNWYN14O9UD8paNy5MssxX6zfcHvGQ721TJD+TCwgm/UgIaTMmaOTW76dIvqCzEqjBCUaEJQ89HGu67Uzxz5YehE5bl1YECTOqdcbo2cSDKk/QKGda0FvWQMm8ZJFKCTku3uMFFGAcSygkEaSQJy9FW89dqWYo1T6VrlFNQgqKcoswxpPgvqJxvhDERBdfZFIRlhjIzW2TxgjxMETFYPrzykLT20K5Z0aeDpReWpezeUZMy4iFRjFOF99bvvpe8TmZQmLcOFY4KHi79H5X10Tp+ZPxB8n5TxgLG8K5bz1//B+qEnpY5GWhztTe3bxklOxYdfMsq+2fH0VD1tySzILf5+DeDPqOHsTZyhGL6nyes3mNE24r41MPrfInWrCAm7ovzM2Rrs76pzmTBpIyV+3s8Z7x0Tmwk9Bsxoz09VVNmsgGUj/H6SPjzrJuPXpH9/zJhXfy/bY6LZUnTP1Du6Keyy4HSOw== frank.rithesh.pereira@gmail.com
+
+
+
+Git hub commands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+source data - fidn out
+How many hours
+disclosure comparitives from last to current year in PDF 
+GI can spit form c diclosures in excel
+
+Elders taxx return
+Agriculture
+Huge losses
+No care about timimg of deductions
+Agiculural - what are the main accounts?
+What are the main issues?
+What kind of accounts theu have?
+Main itesm are at risk?
+Size, movement, type of adjustment
+
+
+
+Elders main adjustments
+This model can you look at risk
+
+What teh tax return looks lile
+look for risk
+
+Tax return signed , excel working papers - one source - consolidated which entity impacting - 90% of expenses 
+Financials - ASx listed you can fidn fonacnial online
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
